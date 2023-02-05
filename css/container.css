@@ -8,7 +8,7 @@
 .section {
     background-color: white;
     border: 1px solid #ddd;
-    margin:10px;
+    margin: 10px;
 }
 
 .section__header {
@@ -20,18 +20,24 @@
 .form {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 5px;
+    grid-gap: 10px;
+    padding: 20px;
 }
 
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 .form__input {
-    padding: 5px;
-    margin: 20px;
+    padding: 10px;
     border: 1px solid #ddd;
 }
 
 .form__button {
-    padding: 5px;
-    margin: 20px;
+    padding: 10px;
     border: none;
     background-color: teal;
     color: white;
