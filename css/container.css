@@ -3,6 +3,7 @@
     max-width: 900px;
     padding: 15px;
     background: #ddd;
+    word-break: break-word;
 }
 
 .section {
