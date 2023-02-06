@@ -15,9 +15,10 @@
             ${task.content}
             </li>`;
         }
+
         document.querySelector(".js-tasks").innerHTML = htmlString;
     }
-    
+
 
 
     const init = () => {
