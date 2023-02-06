@@ -12,6 +12,10 @@
     padding: 10px;
 }
 
+.task__content--done {
+    text-decoration: line-through;
+}
+
 .task__button {
     height: 30px;
     width: 30px;
