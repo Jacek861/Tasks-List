@@ -8,6 +8,14 @@ html {
     box-sizing: inherit;
 }
 
-body {
+.body {
     font-family: 'Lato', sans-serif;
+    background: #ddd;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+    word-break: break-word;
 }

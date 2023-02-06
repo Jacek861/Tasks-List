@@ -1,15 +1,6 @@
-.container {
-    margin: 0 auto;
-    max-width: 900px;
-    padding: 15px;
-    background: #ddd;
-    word-break: break-word;
-}
-
 .section {
     background-color: white;
-    border: 1px solid #ddd;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .section__header {
@@ -18,6 +9,11 @@
     padding: 20px;
 }
 
+.section__body {
+    padding: 20px;
+}
+
 .section__list {
-    padding: 10px;
+    padding: 0;
+    margin: 0;
 }
