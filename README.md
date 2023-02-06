@@ -3,7 +3,7 @@
 ## Description
 Task list is one of the simplest and easiest scheduling methods to implement. First enter task that you need to do then click "Add a Task" button to confirm. After you can see on the bottom your task with two button from both sides. Green one allow you confirm your task is done and second red one remove it.
 
-![Preview](images/Task List.gif)
+![Presentation](https://github.com/Jacek861/Tasks-List/blob/main/images/Task%20List.gif?raw=true)
 
 ### Demo (https://jacek861.github.io/Tasks-List/)
 
