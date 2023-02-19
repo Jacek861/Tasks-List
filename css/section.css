@@ -1,0 +1,20 @@
+.section {
+    background-color: white;
+    margin: 10px 0;
+}
+
+.section__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+.section__header {
+    margin: 0;
+    padding: 20px;
+}
+
+.section__body {
+    padding: 20px;
+}
