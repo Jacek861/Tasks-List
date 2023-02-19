@@ -1,5 +1,6 @@
 {
     let tasks = [];
+    let hideDoneTask = false;
 
     const addNewTask = (newTaskContent) => {
         tasks = [
@@ -46,18 +47,18 @@
         });
     };
 
-    const render = () => {
-        htmlString = "";
+    const renderTasks = () => {
 
+        htmlString = "";
         for (const task of tasks) {
             htmlString += `
             <li class="tasks__item">
               <button class="task__button js-done">
                 ${task.done ? "✓" : ""}
               </button>
-              <span class="task__content ${task.done ? "task__content--done" : ""}">
+                <span class="task__content ${task.done ? "task__content--done" : ""}">
                 ${task.content}
-              </span>
+                </span>
               <button class="task__button task__button--remove js-remove">
                 🗑
               </button>
@@ -65,7 +66,26 @@
         };
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+    };
 
+    const renderButtons = () => {
+        htmlButtons = "";
+        if (tasks.length > 0) {
+            htmlButtons +=`
+            <button>Complited Task</button>
+            <button>Finish All Tasks</button>
+            `;
+        }
+
+        document.querySelector(".js-buttons").innerHTML = htmlButtons;
+    };
+
+    const bindButtonsEvent = () => { };
+
+    const render = () => {
+        renderTasks();
+        renderButtons();
+        bindButtonsEvent();
         bindRemoveEvents();
         bindDoneEvents();
     };
