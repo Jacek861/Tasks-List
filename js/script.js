@@ -90,10 +90,10 @@
         htmlButtons = "";
         if (tasks.length > 0) {
             htmlButtons += `
-            <button class="js-hideShow">${hideDoneTasks ? "Show" : "Hide"}
+            <button class="section__buttons js-hideShow">${hideDoneTasks ? "Show" : "Hide"}
               Complited Task
             </button>
-            <button class="js-allDone"${tasks.every(task => task.done) ? "disabled" : ""}>
+            <button class="section__buttons js-allDone"${tasks.every(task => task.done) ? "disabled" : ""}>
               Finish All Tasks
             </button>
             `;
