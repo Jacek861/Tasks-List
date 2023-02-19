@@ -20,8 +20,10 @@
     border: none;
     background-color: teal;
     color: white;
+    transition: background 1s, transform 1s;
 }
 
 .form__button:hover {
     background-color: rgb(6, 197, 197);
+    transform: scale(1.2);
 }
