@@ -1,7 +1,11 @@
 # Tasks-List
 
 ## Description
-Task list is one of the simplest and easiest scheduling methods to implement. First enter task that you need to do then click "Add a Task" button to confirm. After you can see on the bottom your task with two button from both sides. Green one allow you confirm your task is done and second red one remove it.
+
+This is my next project created in the process of becoming the Frontend Developer. I have created a simple to-do list that allows you to add new tasks to the list below, mark completed tasks and remove tasks from the list. You can also hide and show tasks that are marked as done and mark all tasks as done. The application has been prepared to be used in convenient way also on smaller devices.
+
+## How it works
+At the beginning you need to enter your first task. To add the task to the list below, you need to click the "Add a task" button. You can add to the list as many tasks, as you want. If you want to mark one of the comleted tasks, you can click the green button. You can also remove a task from the list by clicking the red button. If you want to hide tasks that are marked as done, click the "Hide completed task" button, and if you want to show them once again, click the "Show completed task" button. There is also possibility to mark all tasks as done by clicking the "Finish all task" button. If you wish you can create your own to-do list by [click here](https://jacek861.github.io/Tasks-List/)
 
 ![Presentation](https://github.com/Jacek861/Tasks-List/blob/main/images/Task%20List.gif?raw=true)
 
@@ -9,8 +13,8 @@ Task list is one of the simplest and easiest scheduling methods to implement. Fi
 
 ## Technologies
 - HTML
-- CSS
-- JavaScript
+- CSS Grid
+- Media queries
+- Normalize.css
+- JavaScript ES6+
 - BEM convention
-- ES6+ features
-- Grid
