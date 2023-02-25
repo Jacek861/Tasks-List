@@ -2,7 +2,6 @@
     let tasks = [];
     let hideDoneTasks = false;
 
-
     const markAllTaskDone = () => {
         tasks = tasks.map(task => ({
             ...task,
@@ -11,12 +10,10 @@
         render();
     };
 
-
     const hideShowTask = () => {
         hideDoneTasks = !hideDoneTasks;
         render();
     };
-
 
     const addNewTask = (newTaskContent) => {
         tasks = [
@@ -26,7 +23,6 @@
         render();
     };
 
-
     const removeTask = (taskIndex) => {
         tasks = [
             ...tasks.slice(0, taskIndex),
@@ -34,7 +30,6 @@
         ];
         render();
     };
-
 
     const toggleTaskDone = (taskIndex) => {
         tasks = [
@@ -45,7 +40,6 @@
         render();
     };
 
-
     const bindRemoveEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
         removeButtons.forEach((removeButton, index) => {
@@ -55,7 +49,6 @@
         });
     };
 
-
     const bindDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-done");
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
@@ -64,7 +57,6 @@
             });
         });
     };
-
 
     const renderTasks = () => {
         htmlString = "";
@@ -85,7 +77,6 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
     };
 
-
     const renderButtons = () => {
         htmlButtons = "";
         if (tasks.length > 0) {
@@ -102,7 +93,6 @@
         document.querySelector(".js-buttons").innerHTML = htmlButtons;
     };
 
-
     const bindButtonsEvents = () => {
         const hideShowButton = document.querySelector(".js-hideShow");
         if (hideShowButton) {
@@ -115,7 +105,6 @@
         }
     };
 
-
     const render = () => {
         renderTasks();
         renderButtons();
@@ -123,7 +112,6 @@
         bindRemoveEvents();
         bindDoneEvents();
     };
-
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -137,7 +125,6 @@
         };
         newTaskElement.focus();
     };
-
 
     const init = () => {
         render();
